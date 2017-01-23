@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'starbutterfly'
+
+case ARGV[0]
+when 'cast'
+	then StarButterfly.cast!
+when 'tweet'
+	then StarButterfly.tweet!
+else
+	puts 'Unknown command. Valid commands: cast, tweet.'
+end
